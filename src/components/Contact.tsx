@@ -1,24 +1,24 @@
 const Contact = () => {
   return (
-    <div className="isolate bg-white px-6 py-24 sm:py-32 lg:px-8">
+    <div className="bg-white px-6 py-24 sm:py-32 lg:px-8">
       <form action="#" method="POST" className="">
         <div className="grid grid-cols-1 gap-x-8 gap-y-6">
           <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
             <div className="flex flex-col">
-              <label className="font-semibold">Name</label>
+              <label className="font-semibold">Name <span className="text-red-600">*</span></label>
               <input
                 type="text"
                 placeholder="Enter your name"
-                className="text-black"
+                className="text-black rounded-md"
                 required
               ></input>
             </div>
             <div className="flex flex-col">
-              <label className="font-semibold">Email</label>
+              <label className="font-semibold">Email <span className="text-red-600">*</span></label>
               <input
                 type="email"
                 placeholder="Enter your email"
-                className="text-black"
+                className="text-black rounded-md"
                 required
               ></input>
             </div>
@@ -27,23 +27,23 @@ const Contact = () => {
               <input
                 type="text"
                 placeholder="Enter the subject"
-                className="text-black"
+                className="text-black rounded-md"
               ></input>
             </div>
             <div className="flex flex-col">
-              <label className="font-semibold">Mobile No.</label>
+              <label className="font-semibold rounded-md">Mobile No.</label>
               <input
                 type="tel"
                 placeholder="Enter your mobile number"
-                className="text-black"
+                className="text-black rounded-md"
               ></input>
             </div>
           </div>
           <div className="flex flex-col">
-            <label className="font-semibold">Message</label>
+            <label className="font-semibold">Message <span className="text-red-600">*</span></label>
             <textarea
               placeholder="Enter your message"
-              className="text-black"
+              className="text-black rounded-md"
               required
             ></textarea>
           </div>
