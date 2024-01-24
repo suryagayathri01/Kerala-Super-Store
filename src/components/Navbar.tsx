@@ -1,74 +1,67 @@
+import { useState } from "react";
+
 const Navbar = () => {
+  const [hamOpen, setHamOpen] = useState(false);
+  const terms = [
+    {
+      name: "Home",
+      link: "#",
+    },
+    {
+      name: "About",
+      link: "#About",
+    },
+    {
+      name: "Gallery",
+      link: "#Gallery",
+    },
+    {
+      name: "Contact",
+      link: "#Contact",
+    },
+  ];
+
   return (
-    <nav className="border-gray-200 bg-white dark:bg-gray-900">
-      <div className="mx-auto flex max-w-screen-xl flex-wrap items-center justify-between p-4">
-        <a href="#" className="flex items-center space-x-3 rtl:space-x-reverse">
-          <img src="" className="h-8" alt="Logo" />
-          <span className="self-center whitespace-nowrap text-2xl font-semibold dark:text-white">
-            Kerala Super Store
-          </span>
-        </a>
-        <button
-          data-collapse-toggle="navbar-default"
-          type="button"
-          className="inline-flex h-10 w-10 items-center justify-center rounded-lg p-2 text-sm text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 md:hidden dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-          aria-controls="navbar-default"
-          aria-expanded="false"
-        >
-          <span className="sr-only">Open main menu</span>
-          <svg
-            className="h-5 w-5"
-            aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 17 14"
+    <nav className="flex h-16 items-center justify-between p-4 font-semibold capitalize">
+      <h1 className="text-2xl">Kerala Super Store</h1>
+      <ul className="hidden items-center gap-4 sm:flex">
+        {terms.map((term) => (
+          <li
+            key={term.name}
+            className={
+              term.name === "Contact"
+                ? "rounded-full bg-blue-400 px-4 py-2 text-white hover:bg-blue-500"
+                : "hover:underline"
+            }
           >
-            <path
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M1 1h15M1 7h15M1 13h15"
-            />
-          </svg>
-        </button>
-        <div className="hidden w-full md:block md:w-auto" id="navbar-default">
-          <ul className="mt-4 flex flex-col rounded-lg border border-gray-100 bg-gray-50 p-4 font-medium md:mt-0 md:flex-row md:space-x-8 md:border-0 md:bg-white md:p-0 rtl:space-x-reverse dark:border-gray-700 dark:bg-gray-800 md:dark:bg-gray-900">
-            <li>
-              <a
-                href="#"
-                className="block rounded bg-blue-700 px-3 py-2 text-white md:bg-transparent md:p-0 md:text-blue-700 dark:text-white md:dark:text-blue-500"
-              >
-                Home
-              </a>
+            <a href={term.link}>{term.name}</a>
+          </li>
+        ))}
+      </ul>
+      <svg
+        onClick={() => setHamOpen(!hamOpen)}
+        className="w-10 rounded-md fill-black p-2 hover:bg-gray-200 sm:hidden"
+        viewBox="0 0 15 15"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path d="M1.5 3C1.22386 3 1 3.22386 1 3.5C1 3.77614 1.22386 4 1.5 4H13.5C13.7761 4 14 3.77614 14 3.5C14 3.22386 13.7761 3 13.5 3H1.5ZM1 7.5C1 7.22386 1.22386 7 1.5 7H13.5C13.7761 7 14 7.22386 14 7.5C14 7.77614 13.7761 8 13.5 8H1.5C1.22386 8 1 7.77614 1 7.5ZM1 11.5C1 11.2239 1.22386 11 1.5 11H13.5C13.7761 11 14 11.2239 14 11.5C14 11.7761 13.7761 12 13.5 12H1.5C1.22386 12 1 11.7761 1 11.5Z"></path>
+      </svg>
+      {hamOpen && (
+        <ul className="sm:hidden absolute inset-0 top-16 flex h-fit flex-col items-center justify-center gap-4 bg-white p-6 font-semibold capitalize shadow-lg">
+          {terms.map((term) => (
+            <li
+              key={term.name}
+              className={
+                term.name === "Contact"
+                  ? "w-1/2 rounded-full bg-blue-400 px-4 py-2 text-center text-white hover:bg-blue-500"
+                  : "w-1/2 rounded-full bg-gray-100 px-4 py-2 text-center text-black hover:bg-gray-200"
+              }
+            >
+              <a href={term.link}>{term.name}</a>
             </li>
-            <li>
-              <a
-                href="#About"
-                className="block rounded px-3 py-2 text-gray-900 hover:bg-gray-100 md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-blue-700 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent md:dark:hover:text-blue-500"
-              >
-                About
-              </a>
-            </li>
-            <li>
-              <a
-                href="#Gallery"
-                className="block rounded px-3 py-2 text-gray-900 hover:bg-gray-100 md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-blue-700 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent md:dark:hover:text-blue-500"
-              >
-                Gallery
-              </a>
-            </li>
-            <li>
-              <a
-                href="#Contact"
-                className="block rounded px-3 py-2 text-gray-900 hover:bg-gray-100 md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-blue-700 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent md:dark:hover:text-blue-500"
-              >
-                Contact
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
+          ))}
+        </ul>
+      )}
     </nav>
   );
 };
