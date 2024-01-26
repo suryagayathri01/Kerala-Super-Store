@@ -1,6 +1,6 @@
 const Contact = () => {
   return (
-    <div className="bg-white px-6 py-12 sm:py-9 lg:px-8">
+    <div className="h-screen bg-white px-6 py-12 sm:py-9 lg:px-8">
       <div className="mb-6 bg-white rounded-md mx-auto mt-16 max-w-xl sm:mt-20">
         <div className="text-center font-bold text-3xl py-5">Contact Us</div>
       <form action="#" method="POST" className="shadow-lg px-6 py-14 ">
