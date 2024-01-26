@@ -15,10 +15,6 @@ const Contact = () => {
                 className="placeholder-gray-400 text-black rounded-md"
                 required
               ></input>
-
-
-
-
             </div>
             <div className="flex flex-col">
               <label className="font-semibold">Email <span className="text-red-600">*</span></label>
