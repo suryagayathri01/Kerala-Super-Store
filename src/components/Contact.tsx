@@ -1,7 +1,10 @@
 const Contact = () => {
   return (
-    <div className="bg-white px-6 py-24 sm:py-32 lg:px-8">
-      <form action="#" method="POST" className="">
+    <div className="bg-white px-6 py-12 sm:py-9 lg:px-8">
+      <div className="mb-6 bg-white rounded-md mx-auto mt-16 max-w-xl sm:mt-20">
+        <div className="text-center font-bold text-3xl py-5">Contact Us</div>
+      <form action="#" method="POST" className="shadow-lg px-6 py-14 ">
+
         <div className="grid grid-cols-1 gap-x-8 gap-y-6">
           <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
             <div className="flex flex-col">
@@ -9,16 +12,20 @@ const Contact = () => {
               <input
                 type="text"
                 placeholder="Enter your name"
-                className="text-black rounded-md"
+                className="placeholder-gray-400 text-black rounded-md"
                 required
               ></input>
+
+
+
+
             </div>
             <div className="flex flex-col">
               <label className="font-semibold">Email <span className="text-red-600">*</span></label>
               <input
                 type="email"
                 placeholder="Enter your email"
-                className="text-black rounded-md"
+                className="placeholder-gray-400 text-black rounded-md"
                 required
               ></input>
             </div>
@@ -27,7 +34,7 @@ const Contact = () => {
               <input
                 type="text"
                 placeholder="Enter the subject"
-                className="text-black rounded-md"
+                className="placeholder-gray-400 text-black rounded-md"
               ></input>
             </div>
             <div className="flex flex-col">
@@ -35,7 +42,7 @@ const Contact = () => {
               <input
                 type="tel"
                 placeholder="Enter your mobile number"
-                className="text-black rounded-md"
+                className="placeholder-gray-400 text-black rounded-md"
               ></input>
             </div>
           </div>
@@ -43,7 +50,7 @@ const Contact = () => {
             <label className="font-semibold">Message <span className="text-red-600">*</span></label>
             <textarea
               placeholder="Enter your message"
-              className="text-black rounded-md"
+              className="placeholder-gray-400 text-black rounded-md"
               required
             ></textarea>
           </div>
@@ -53,8 +60,8 @@ const Contact = () => {
             Send
           </button>
         </div>
-        
       </form>
+      </div>
     </div>
   );
 };
