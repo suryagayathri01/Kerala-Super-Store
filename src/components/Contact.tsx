@@ -9,7 +9,7 @@ const Contact = () => {
           className="rounded-xl bg-white px-9 py-14 shadow-xl "
         >
           <div className="grid grid-cols-1 gap-x-8 gap-y-6">
-            <div className="grid grid-cols-1 gap-x-8 gap-y-6 lg:grid-cols-3">
+            <div className="grid grid-cols-1 gap-x-8 gap-y-6 lg:grid-cols-2">
               <div className="flex flex-col">
                 <label className="font-semibold">
                   Name <span className="text-red-600">*</span>
@@ -39,6 +39,16 @@ const Contact = () => {
                 <input
                   type="tel"
                   placeholder="Phone Number"
+                  className="rounded-md bg-transparent text-black placeholder-gray-600"
+                ></input>
+              </div>
+              <div className="flex flex-col">
+                <label className="rounded-md font-semibold">
+                  Subject
+                </label>
+                <input
+                  type="text"
+                  placeholder="Subject"
                   className="rounded-md bg-transparent text-black placeholder-gray-600"
                 ></input>
               </div>
