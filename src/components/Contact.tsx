@@ -1,7 +1,7 @@
 const Contact = () => {
   return (
-    <div className="h-screen bg-white px-6 py-9 lg:px-5">
-      <div className="mx-auto mb-6 mt-16 max-w-xl rounded-md bg-white sm:mt-20">
+    <div className="h-screen  px-6 py-9 lg:px-5">
+      <div className="mx-auto mb-6 mt-16 max-w-xl rounded-md sm:mt-20">
         <div className="py-5 text-center text-3xl font-bold">Contact Us</div>
         <form action="#" method="POST" className=" py-14 ">
           <div className="grid grid-cols-1 gap-x-8 gap-y-6">
@@ -13,7 +13,7 @@ const Contact = () => {
                 <input
                   type="text"
                   placeholder="Your Name"
-                  className="rounded-md text-black placeholder-gray-600"
+                  className="bg-transparent rounded-md text-black placeholder-gray-600"
                   required
                 ></input>
               </div>
@@ -24,7 +24,7 @@ const Contact = () => {
                 <input
                   type="email"
                   placeholder="Your Email"
-                  className="rounded-md text-black placeholder-gray-600"
+                  className="bg-transparent rounded-md text-black placeholder-gray-600"
                   required
                 ></input>
               </div>
@@ -35,7 +35,7 @@ const Contact = () => {
                 <input
                   type="tel"
                   placeholder="Phone Number"
-                  className="rounded-md text-black placeholder-gray-600"
+                  className="bg-transparent rounded-md text-black placeholder-gray-600"
                 ></input>
               </div>
             </div>
@@ -46,7 +46,7 @@ const Contact = () => {
               <textarea
                 rows="6"
                 placeholder="Your Message"
-                className="rounded-md text-black placeholder-gray-600"
+                className="bg-transparent rounded-md text-black placeholder-gray-600"
                 required
               ></textarea>
             </div>
