@@ -1,9 +1,9 @@
 const Contact = () => {
   return (
     <div className="h-screen  px-6 py-9 lg:px-5">
-      <div className="mx-auto mb-6 mt-16 max-w-xl rounded-md sm:mt-20">
+      <div className="mx-auto mb-6 mt-16 max-w-3xl rounded-md sm:mt-20">
         <div className="py-5 text-center text-3xl font-bold">Contact Us</div>
-        <form action="#" method="POST" className="bg-white rounded-lg px-14 py-14 ">
+        <form action="#" method="POST" className="bg-white rounded-xl shadow-xl px-9 py-14 ">
           <div className="grid grid-cols-1 gap-x-8 gap-y-6">
             <div className="grid grid-cols-1 gap-x-8 gap-y-6 lg:grid-cols-3">
               <div className="flex flex-col">
@@ -57,10 +57,6 @@ const Contact = () => {
             </button>
           </div>
         </form>
-      </div>
-      <div className="flex justify-evenly">
-        <div className="flex flex-col items-center"><div>PHONE</div><div>+91 9995412940 / 9995478590 </div></div>
-        <div className="flex flex-col items-center"><div>EMAIL</div><div>keralasuperstore@gmail.com</div></div>
       </div>
     </div>
   );

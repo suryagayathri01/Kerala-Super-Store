@@ -8,6 +8,10 @@ const Footer = () => {
             <a href="#" className="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
                 <img src="./public/whats.svg" alt="Logo" className="h-8 w-8 flex-shrink-0 antialiased" />
                 <img src="./public/insta.svg" alt="Logo" className="h-8 w-8 flex-shrink-0 antialiased" />
+                {/* <div className="flex justify-evenly">
+        <div className="flex flex-col items-center"><div>PHONE</div><div>+91 9995412940 / 9995478590 </div></div>
+        <div className="flex flex-col items-center"><div>EMAIL</div><div>keralasuperstore@gmail.com</div></div>
+      </div> */}
             </a>
             <ul className="flex flex-wrap items-center mb-6 text-sm font-medium text-black sm:mb-0 dark:text-black">
                 <li>
