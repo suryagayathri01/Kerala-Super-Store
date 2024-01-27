@@ -17,7 +17,7 @@ const About = () => {
           enableScrollSpy={true}
         />
       </div>
-      <div className="m-2 text-lg font-semibold md:w-1/2">
+      <div className="m-2 text-lg font-semibold md:w-1/2 bg-white p-6 rounded-xl shadow-xl">
         Kerala Super Store, situated at the heart of Aloor, stands as a
         prominent supermarket with a rich history. Originating as a grocery
         store in the 1980s, the establishment underwent significant growth,
