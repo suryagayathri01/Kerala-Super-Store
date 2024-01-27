@@ -63,16 +63,6 @@ const Contact = () => {
           </div>
         </form>
       </div>
-      <div className="flex justify-evenly">
-        <div className="flex flex-col items-center">
-          <div>PHONE</div>
-          <div>+91 9995412940 / 9995478590 </div>
-        </div>
-        <div className="flex flex-col items-center">
-          <div>EMAIL</div>
-          <div>keralasuperstore@gmail.com</div>
-        </div>
-      </div>
     </div>
   );
 };
