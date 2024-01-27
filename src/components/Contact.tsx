@@ -3,7 +3,11 @@ const Contact = () => {
     <div className="h-screen  px-6 py-9 lg:px-5">
       <div className="mx-auto mb-6 mt-16 max-w-xl rounded-md sm:mt-20">
         <div className="py-5 text-center text-3xl font-bold">Contact Us</div>
-        <form action="#" method="POST" className="bg-white rounded-lg px-14 py-14 ">
+        <form
+          action="#"
+          method="POST"
+          className="rounded-lg bg-white px-14 py-14 "
+        >
           <div className="grid grid-cols-1 gap-x-8 gap-y-6">
             <div className="grid grid-cols-1 gap-x-8 gap-y-6 lg:grid-cols-3">
               <div className="flex flex-col">
@@ -13,7 +17,7 @@ const Contact = () => {
                 <input
                   type="text"
                   placeholder="Your Name"
-                  className="bg-transparent rounded-md text-black placeholder-gray-600"
+                  className="rounded-md bg-transparent text-black placeholder-gray-600"
                   required
                 ></input>
               </div>
@@ -24,7 +28,7 @@ const Contact = () => {
                 <input
                   type="email"
                   placeholder="Your Email"
-                  className="bg-transparent rounded-md text-black placeholder-gray-600"
+                  className="rounded-md bg-transparent text-black placeholder-gray-600"
                   required
                 ></input>
               </div>
@@ -35,7 +39,7 @@ const Contact = () => {
                 <input
                   type="tel"
                   placeholder="Phone Number"
-                  className="bg-transparent rounded-md text-black placeholder-gray-600"
+                  className="rounded-md bg-transparent text-black placeholder-gray-600"
                 ></input>
               </div>
             </div>
@@ -43,9 +47,10 @@ const Contact = () => {
               <label className="font-semibold">
                 Message <span className="text-red-600">*</span>
               </label>
-              <textarea rows={6}
+              <textarea
+                rows={6}
                 placeholder="Your Message"
-                className="bg-transparent rounded-md text-black placeholder-gray-600"
+                className="rounded-md bg-transparent text-black placeholder-gray-600"
                 required
               ></textarea>
             </div>
@@ -59,8 +64,14 @@ const Contact = () => {
         </form>
       </div>
       <div className="flex justify-evenly">
-        <div className="flex flex-col items-center"><div>PHONE</div><div>+91 9995412940 / 9995478590 </div></div>
-        <div className="flex flex-col items-center"><div>EMAIL</div><div>keralasuperstore@gmail.com</div></div>
+        <div className="flex flex-col items-center">
+          <div>PHONE</div>
+          <div>+91 9995412940 / 9995478590 </div>
+        </div>
+        <div className="flex flex-col items-center">
+          <div>EMAIL</div>
+          <div>keralasuperstore@gmail.com</div>
+        </div>
       </div>
     </div>
   );
