@@ -23,7 +23,7 @@ const Navbar = () => {
 
   return (
     <nav className="flex h-16 items-center justify-between p-4 font-semibold capitalize">
-      <h1 className="text-2xl">Kerala Super Store</h1>
+      <a href="#" className="text-2xl">Kerala Super Store</a>
       <ul className="hidden items-center gap-4 sm:flex">
         {terms.map((term) => (
           <li
