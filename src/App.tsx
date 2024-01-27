@@ -7,11 +7,15 @@ import Navbar from "./components/Navbar";
 function App() {
   return (
     <>
-      <Navbar />
-      <About />
-      <Gallery />
-      <Contact />
-      <Footer />
+      <div className="nav">
+        <Navbar />
+      </div>
+      <div className="content">
+        <About />
+        <Gallery />
+        <Contact />
+        <Footer />
+      </div>
     </>
   );
 }
