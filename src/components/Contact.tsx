@@ -60,7 +60,7 @@ const Contact = () => {
               <textarea
                 rows={6}
                 placeholder="Your Message"
-                className="rounded-md bg-transparent text-black placeholder-gray-600"
+                className="resize-none rounded-md bg-transparent text-black placeholder-gray-600"
                 required
               ></textarea>
             </div>
