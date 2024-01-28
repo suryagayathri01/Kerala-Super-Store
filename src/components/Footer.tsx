@@ -1,36 +1,48 @@
 const Footer = () => {
   return (
-    
-
-<footer className="bg-white ">
-    <div className="w-full max-w-screen-xl mx-auto p-4 sm:p-8">
-        <div className="sm:flex sm:items-center sm:justify-between">
-            <a href="#" className="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
-                <img src="./public/whats.svg" alt="Logo" className="h-8 w-8 flex-shrink-0 antialiased" />
-                <img src="./public/insta.svg" alt="Logo" className="h-8 w-8 flex-shrink-0 antialiased" />
+    <footer className="bg-white ">
+      <div className="p-4">
+        <div className="flex flex-col ">
+          <div className="flex justify-between ">
+            <a href="#" className="mx-6 flex space-x-3 lg:mx-12">
+              <img src="./public/whats.svg" alt="Logo" className="h-6 w-6 " />
+              <img src="./public/insta.svg" alt="Logo" className="h-6 w-6 " />
             </a>
-            <ul className="flex flex-wrap items-center mb-6 text-sm font-medium text-black sm:mb-0 dark:text-black">
-                <li>
-                    <a href="#About" className="hover:underline me-4 md:me-6">About</a>
-                </li>
-                <li>
-                    <a href="#" className="hover:underline me-4 md:me-6">Privacy Policy</a>
-                </li>
-                <li>
-                    <a href="#" className="hover:underline me-4 md:me-6">Licensing</a>
-                </li>
-                <li>
-                    <a href="#Contact" className="hover:underline">Contact</a>
-                </li>
+            <ul className="mx-6 mb-4 flex space-x-3 text-sm font-medium text-black lg:mx-12">
+              <li>
+                <a href="#" className="hover:underline">
+                  About
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:underline">
+                  Privacy Policy
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:underline">
+                  Licensing
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:underline">
+                  Contact
+                </a>
+              </li>
             </ul>
+          </div>
+          <div className="mx-6 my-6 border-t border-gray-700 lg:mx-12"></div>
+          <span className="text-center text-sm text-gray-400">
+            © 2023{" "}
+            <a href="#App" className="hover:underline">
+              Kerala Super Store
+            </a>
+            . All Rights Reserved.
+          </span>
         </div>
-        <hr className="my-6 border-gray-200 mx-auto dark:border-gray-700 " />
-        <span className="block text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="#App" className="hover:underline">Kerala Super Store</a>. All Rights Reserved.</span>
-    </div>
-</footer>
+      </div>
+    </footer>
+  );
+};
 
-
-  )
-}
-
-export default Footer
+export default Footer;

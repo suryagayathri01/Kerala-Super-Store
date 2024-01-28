@@ -12,10 +12,10 @@ function App() {
       </div>
       <div className="content">
         <About />
-        </div>
-        <Gallery />
-        <Contact />
-        <Footer />
+      </div>
+      <Gallery />
+      <Contact />
+      <Footer />
     </>
   );
 }
