@@ -5,8 +5,8 @@ const Footer = () => {
         <div className="flex flex-col ">
           <div className="flex justify-between ">
             <a href="#" className="mx-6 flex space-x-3 lg:mx-12">
-              <img src="./public/whats.svg" alt="Logo" className="h-6 w-6 " />
-              <img src="./public/insta.svg" alt="Logo" className="h-6 w-6 " />
+              <img src="./whats.svg" alt="Logo" className="h-6 w-6" />
+              <img src="./insta.svg" alt="Logo" className="h-6 w-6" />
             </a>
             <ul className="mx-6 mb-4 flex space-x-3 text-sm font-medium text-black lg:mx-12">
               <li>
